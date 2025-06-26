@@ -4,7 +4,7 @@ metadata:
   name: kanidm-backup
   namespace: {{ .Release.Namespace }}
 spec:
-  storageClassName: nfs-client
+  storageClassName: { .Values.storage.className }}
   accessModes:
     - ReadWriteOnce
   resources:
