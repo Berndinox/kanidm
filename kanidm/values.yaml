@@ -4,3 +4,6 @@ ingress:
   className: nginx
   clusterIssuer: letsencrypt-prod
   tlsSecretName: idm-kammel-dev-tls
+
+storage:
+  className: proxmox-data
