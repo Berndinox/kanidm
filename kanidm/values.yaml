@@ -1,4 +1,4 @@
-domain: idm.kammel.dev
+domain: sso.example.domain
 
 ingress:
   className: nginx
