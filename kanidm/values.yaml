@@ -6,4 +6,4 @@ ingress:
   tlsSecretName: idm-kammel-dev-tls
 
 storage:
-  className: proxmox-data
+  className: proxmox-data-xfs
