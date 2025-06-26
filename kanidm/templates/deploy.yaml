@@ -55,8 +55,8 @@ spec:
           mountPath: /var/run
         resources:
           limits:
-            cpu: 200m
-            memory: 256Mi
+            cpu: 400m
+            memory: 384Mi
           requests:
             cpu: 100m
             memory: 128Mi
