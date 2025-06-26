@@ -4,7 +4,7 @@ metadata:
   name: kanidm-backup
   namespace: {{ .Release.Namespace }}
 spec:
-  storageClassName: { .Values.storage.className }}
+  storageClassName: {{ .Values.storage.className }}
   accessModes:
     - ReadWriteOnce
   resources:
