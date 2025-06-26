@@ -26,7 +26,7 @@ data:
     #   connected client. If you are not using a load balancer
     #   then you should leave this value as default.
     #   Defaults to false
-    # trust_x_forward_for = false
+    trust_x_forward_for = true
     #
     #   The path to the kanidm database.
     db_path = "/db/kanidm.db"
@@ -43,7 +43,7 @@ data:
     #   - other:
     #     * sets database pagesize to 4k, matching most
     #       filesystems block sizes.
-    # db_fs_type = "zfs"
+    db_fs_type = "zfs"
     #
     #   The number of entries to store in the in-memory cache.
     #   Minimum value is 256. If unset
@@ -96,7 +96,7 @@ data:
     path = "/backups/"
     #   The schedule to run online backups (see https://crontab.guru/)
     #   every day at 22:00 UTC (default)
-    schedule = "00 22 * * *"
+    schedule = "00 01 * * *"
     #    four times a day at 3 minutes past the hour, every 6th hours
     # schedule = "03 */6 * * *"
     #   We also support non standard cron syntax, with the following format:
@@ -104,4 +104,4 @@ data:
     #   (it's very similar to the standard cron syntax, it just allows to specify the seconds
     #   at the beginning and the year at the end)
     #   Number of backups to keep (default 7)
-    # versions = 7
+    versions = 5
