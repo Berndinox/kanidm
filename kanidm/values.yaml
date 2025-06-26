@@ -1,9 +1,9 @@
-domain: sso.example.domain
+domain: sso.klaus.onl
 
 ingress:
   className: nginx
   clusterIssuer: letsencrypt-prod
-  tlsSecretName: idm-kammel-dev-tls
+  tlsSecretName: sso-klaus-onl
 
 storage:
   className: proxmox-data-xfs
